@@ -1,0 +1,25 @@
+<mvc:View controllerName="com.airbus.unc.main.CP.controller.cp" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+	<!--<Shell>-->
+	<!--	<App class="myAppDemoWT">-->
+	<!--		<pages>-->
+	<!--			<Page title="{i18n>homePageTitle}">-->
+	<!--				<headerContent>-->
+	<!--					<Button press=".onOpenDialog"/>-->
+	<!--				</headerContent>-->
+	<!--				<content>-->
+	<!--					<mvc:XMLView viewName="com.airbus.unc.main.CP.view.HelloPanel"/>-->
+	<!--					<mvc:XMLView viewName="com.airbus.unc.main.CP.view.InvoiceList"/>-->
+	<!--				</content>-->
+	<!--				<footer id="footer">-->
+	<!--					<Toolbar>-->
+	<!--						<Button id="chatBtn" text="chat"></Button>-->
+	<!--					</Toolbar>-->
+	<!--				</footer>-->
+	<!--			</Page>-->
+	<!--		</pages>-->
+	<!--	</App>-->
+	<!--</Shell>-->
+	<Shell>
+		<App class="myAppDemoWT" id="cp"/>
+	</Shell>
+</mvc:View>
