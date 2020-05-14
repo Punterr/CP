@@ -10,6 +10,13 @@
 			"version": "1.0.0"
 		},
 		"dataSources": {
+			"oDataSAP": {
+				"uri": "/sap/opu/odata/SAP/Z_2L05_UNC_XEA_ODP_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			},
 			"invoiceRemote": {
 				"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
 				"type": "OData",
@@ -55,6 +62,19 @@
 			"invoice": {
 				"dataSource": "invoiceRemote"
 
+			},
+			"uncModel": {
+				"dataSource": "oDataSAP",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"odataVersion": "2.0",
+					"defaultCountMode": "None",
+					"defaultBindingMode": "TwoWay",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"bManageNavigationLinks": true
+				},
+				"preload": true
 			}
 		},
 		"routing": {
